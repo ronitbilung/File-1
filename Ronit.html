@@ -26,7 +26,8 @@
       font-size: 24px;
       color: #2e7d32;
       margin-bottom: 20px;
-    }
+     
+    }  
     .button {
       display: block;
       width: 100%;
@@ -35,9 +36,10 @@
       border: none;
       border-radius: 6px;
       font-size: 16px;
-      cursor: pointer;
+      align-content: center; 
       color: white;
       transition: background-color 0.3s ease;
+
     }
     .deposit {
       background-color: #4caf50; 
@@ -51,12 +53,16 @@
     .withdraw:hover {
       background-color: #d32f2f;
     }
+
+
+
+
   </style>
 </head>
 <body>
   <div class="card">
     <div class="balance">$0</div>
-    <button class="button deposit">Deposit</button>
+    <button class="button deposit" style="align-items: left;">Deposit</button>
     <button class="button withdraw">Withdraw</button>
   </div>
 </body>
