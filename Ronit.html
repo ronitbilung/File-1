@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Form </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balance Card</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 250px;
+    }
+    .balance {
+      font-size: 24px;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .deposit {
+      background-color: #4caf50; 
+    }
+    .deposit:hover {
+      background-color: #45a049;
+    }
+    .withdraw {
+      background-color: #f44336; 
+    }
+    .withdraw:hover {
+      background-color: #d32f2f;
+    }
+  </style>
 </head>
-<body image="download.jpg">
-        <h1>Student Registration Form</h1>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="age">Age:</label><br>
-            <input type="number" id="age" name="age" required><br><br>
-
-            <label for="course">Course:</label>
-            <select id="course" name="course">
-                <option value="btech">B.Tech</option>
-                <option value="mtech">M.Tech</option>
-                <option value="mba">MBA</option>
-                <option value="phd">PhD</option>
-            </select><br><br>
-
-            <button type="submit">Register</button>
-        </form>
+<body>
+  <div class="card">
+    <div class="balance">$0</div>
+    <button class="button deposit">Deposit</button>
+    <button class="button withdraw">Withdraw</button>
+  </div>
 </body>
 </html>
